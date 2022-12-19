@@ -16,20 +16,20 @@ syntax enable
 
 " nerdtree: https://github.com/preservim/nerdtree
 "   ^make sure the contents in this github repo is inside ~/.vim
-call plug#begin()
-  Plug 'preservim/nerdtree'
-call plug#end()
-
-" Onehalfdark colorscheme: https://www.youtube.com/watch?v=Cs4MBcEUrMk
-call plug#begin('~/.vim/plugged')
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
-call plug#end()
-
-syntax on
-set t_Co=256
-set cursorline
-colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
+"call plug#begin()
+"  Plug 'preservim/nerdtree'
+"call plug#end()
+"
+"" Onehalfdark colorscheme: https://www.youtube.com/watch?v=Cs4MBcEUrMk
+"call plug#begin('~/.vim/plugged')
+"Plug 'sonph/onehalf', { 'rtp': 'vim' }
+"call plug#end()
+"
+"syntax on
+"set t_Co=256
+"set cursorline
+"colorscheme onehalfdark
+"let g:airline_theme='onehalfdark'
 " lightline
 " let g:airline_theme='onehalfdark'
 
@@ -112,8 +112,10 @@ set mouse=a
 " Use arrows as you know it
 set nocompatible
 
-" Using the clipboard as the default register
+" Linux: Using the clipboard as the default register
 set clipboard=unnamedplus
+" Mac: Using the clipboard as the default register
+"set clipboard=unnamed
 
 " spell check on
 " setlocal spell spelllang=en_us
